@@ -9,7 +9,89 @@
   <meta name="author" content="Your Name">
   <link rel="canonical" href="https://www.2nerds.ca">
   <style>
-    /* Add your CSS styles here */
+    /* Global styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+    header {
+      background-color: #007bff;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    section {
+      padding: 20px;
+    }
+    h2 {
+      color: #007bff;
+      font-size: 24px;
+      margin-top: 0;
+    }
+    h3 {
+      color: #333;
+    }
+    p {
+      line-height: 1.6;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    footer {
+      background-color: #007bff;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    footer p {
+      margin: 0;
+    }
+    button {
+      background-color: #fff;
+      color: #007bff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #007bff;
+      color: #fff;
+    }
+
+    /* Specific styles */
+    div.dynamic-duo {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    div.dynamic-duo > div {
+      flex: 0 0 45%;
+      max-width: 45%;
+      margin-bottom: 20px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    @media (max-width: 768px) {
+      div.dynamic-duo > div {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
@@ -18,13 +100,15 @@
   </header>
   <section>
     <h2>Meet Our Dynamic Duo:</h2>
-    <div>
-      <h3>Kyle the Computer Connoisseur:</h3>
-      <p>With a knack for coding and a love for all things tech, Kyle is your go-to guy for anything computer-related. Whether it's troubleshooting a glitchy program or diving deep into the world of artificial intelligence, Kyle is your tech-savvy guru.</p>
-    </div>
-    <div>
-      <h3>Megan the Crochet Enthusiast:</h3>
-      <p>Passionate about patterns and dedicated to the art of crochet, Megan's creativity knows no bounds when it comes to yarn. From cozy scarves to intricate afghans, Megan's needlework is a sight to behold. She's always up for sharing crochet tips or discussing the latest yarn trends!</p>
+    <div class="dynamic-duo">
+      <div>
+        <h3>Kyle the Computer Connoisseur:</h3>
+        <p>With a knack for coding and a love for all things tech, Kyle is your go-to guy for anything computer-related. Whether it's troubleshooting a glitchy program or diving deep into the world of artificial intelligence, Kyle is your tech-savvy guru.</p>
+      </div>
+      <div>
+        <h3>Megan the Crochet Enthusiast:</h3>
+        <p>Passionate about patterns and dedicated to the art of crochet, Megan's creativity knows no bounds when it comes to yarn. From cozy scarves to intricate afghans, Megan's needlework is a sight to behold. She's always up for sharing crochet tips or discussing the latest yarn trends!</p>
+      </div>
     </div>
   </section>
   <section>
